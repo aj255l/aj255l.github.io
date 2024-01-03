@@ -2,64 +2,29 @@
 <html>
 <head>
 	<title> Anna Lee's Website </title>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
-	<style>
-		body {
-			font-family: "Computer Modern Sans", Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-		}
-
-		.container {
-			width: 60%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		#annaImg {
-			width: 20rem;
-			height: 20rem;
-			margin-right: 2rem;
-			float: left;
-            margin-bottom: 2rem;
-		}
-
-		#textDiv {
-			font-size: 1.25rem;
-		}
-
-		footer {
-			text-align: center;
-			width: 100%;
-			margin-bottom: 2rem;
-			font-size: 1.1rem;
-		}
-
-		.iconSpan {
-			display: block;
-			width: 100%;
-		}
-
-		.icon {
-			width: 40px;
-			height: 40px;
-		}
-	</style>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="">
+    <link href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css" rel="stylesheet">
 </head>
+
 <body>
-	<!-- <marquee>THIS WEEK I AM CROAKING IN: EVERYTHING</marquee> -->
+	<div class="navbar">
+		<a class="header" href="">Anna Lee</a>
+		<div class="links">
+			<a class="active" href="">Home</a>
+			<a href="Anna_Lee_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+			<a href="blog.html">Blog</a>
+		</div>
+	</div> 
+	<hr>
 	<div class="container">
-		<h1 style="margin-bottom: 10px;">Anna Lee </h1>
-		<span class="iconSpan">
-			<a href="https://www.linkedin.com/in/anna-lee-156baa24a/">
-				<img class="icon" src="https://img.icons8.com/?size=1x&id=8808&format=png">
-			</a>
-		</span>
 		<div id="annaDiv">
-			<img id="annaImg" src="anna_lee.jpg"/>
+			<img id="annaImg" src="images/anna_lee.jpg"/>
 			<div id="textDiv">
 				<h2>Welcome to my site!</h2>
 				<p>Hi! I'm <b>Anna Lee</b>, a junior studying Computer Science at Carnegie Mellon University, Pittsburgh, and I'm pursuing a systems concentration. I'm interested in algorithm design, data structures, and computer systems. I also have a passion for teaching, and have been a teaching assistant for five semesters (four with 15-112 and one with 15-210).</p>
                 <p>This summer, I was the content creation division lead for 15-112, writing daily recitation lesson plans, weekly practice quizzes and extra practice problems.</p>
-				<p>You can find my resume <a href="Anna_Lee_Resume.pdf" target="_blank" rel "noopener noreferrer">here</a>.</p>
 			</div>
         </div>
         <div style="clear:both">
@@ -80,6 +45,14 @@
                 <li>Teaching Assistant for 15-210 (F23)</li>
             </ul>
         </div>
+		<span class="iconbar">
+			<a href="https://www.linkedin.com/in/anna-lee-156baa24a/">
+				<img class="icon" src="images/icons/linkedin.png"> <!-- Sourced from https://www.flaticon.com/free-icon/linkedin_3536569 -->
+			</a>
+			<a href="https://github.com/aj255l/">
+				<img class="icon" src="images/icons/github.png"> <!-- Sourced from https://www.flaticon.com/free-icon/github_2111432 -->
+			</a>
+		</span>
 		<footer>
 			&copy; Copyright Anna Lee 2023. All rights reserved.
 		</footer>

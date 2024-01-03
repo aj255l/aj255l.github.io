@@ -1,0 +1,151 @@
+:root {
+    --link-color: #B536DA;
+  }
+
+body {
+    font-family: "Computer Modern Sans", Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+a {
+    color: var(--link-color);
+}
+
+.container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    clear: both;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.navbar a.header {
+    float: left;
+    font-size: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.navbar a.header:hover {
+    color: #000000;
+}
+
+.navbar div.links {
+    float: right;
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.navbar a {
+    color: #000000;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--link-color);
+}
+
+.navbar a.active {
+    font-weight: bold;
+}
+
+.navbar a.active:hover {
+    font-weight: bold;
+    color: var(--link-color);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+}
+  
+#annaImg { /* Courtesy of Theo Kroening */
+    width: 20rem;
+    height: 20rem;
+    margin-right: 2rem;
+    float: left;
+    margin-bottom: 2rem;
+}
+
+#textDiv {
+    font-size: 1.25rem;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.iconbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.iconbar a {
+    text-decoration: none;
+}
+
+.iconbar a.tooltip {
+    position: relative;
+    display: inline-block;
+    color: #000000;
+}
+
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.iconbar a.tooltip img div.tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: black;
+    color: #555;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    /* opacity: 0;
+    transition: opacity 0.3s; */
+}
+
+.iconbar a.tooltip img div.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    /* border-color: #555 transparent transparent transparent; */
+}
+
+.iconbar a.tooltip:hover img div.tooltiptext {
+    visibility: visible;
+    /* opacity: 1; */
+}
