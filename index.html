@@ -1,3 +1,10 @@
+<!-- 
+TODO:
+- responsive
+- cat in navbar
+- dark mode
+- paper mode
+ -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,6 +32,7 @@
 				<h2>Welcome to my site!</h2>
 				<p>Hi! I'm <b>Anna Lee</b>, a junior studying Computer Science at Carnegie Mellon University, Pittsburgh, and I'm pursuing a systems concentration. I'm interested in algorithm design, data structures, and computer systems. I also have a passion for teaching, and have been a teaching assistant for five semesters (four with 15-112 and one with 15-210).</p>
                 <p>This summer, I was the content creation division lead for 15-112, writing daily recitation lesson plans, weekly practice quizzes and extra practice problems.</p>
+				<p>I have two cats named <a href="images/lemon.jpg" target="_blank" rel="noopener noreferrer">Lemon</a> and <a href="images/lilac.jpg" target="_blank" rel="noopener noreferrer">Lilac</a>.</p>
 			</div>
         </div>
         <div style="clear:both">
@@ -52,10 +60,15 @@
 			<a href="https://github.com/aj255l/">
 				<img class="icon" src="images/icons/github.png"> <!-- Sourced from https://www.flaticon.com/free-icon/github_2111432 -->
 			</a>
+			<a href="javascript:void(0);" onclick="openMailTo()">
+				<img class="icon" src="images/icons/email.png"> <!-- Sourced from https://www.flaticon.com/free-icon/email_3178158 -->
+				<script src="util.js"></script> 
+			</a>
 		</span>
-		<footer>
-			&copy; Copyright Anna Lee 2023. All rights reserved.
-		</footer>
 	</div>
+	<hr>
+	<footer>
+		&copy; Copyright Anna Lee 2023. All rights reserved.
+	</footer>
 </body>
 </html>
